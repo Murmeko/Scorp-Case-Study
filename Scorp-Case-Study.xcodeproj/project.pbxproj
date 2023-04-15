@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		1B6F224F29EAE11300524C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F224E29EAE11300524C72 /* AppDelegate.swift */; };
 		1B6F225129EAE11300524C72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F225029EAE11300524C72 /* SceneDelegate.swift */; };
-		1B6F225329EAE11300524C72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F225229EAE11300524C72 /* ViewController.swift */; };
+		1B6F225329EAE11300524C72 /* PeopleListerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F225229EAE11300524C72 /* PeopleListerViewController.swift */; };
 		1B6F225629EAE11300524C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F225429EAE11300524C72 /* Main.storyboard */; };
 		1B6F225829EAE11400524C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F225729EAE11400524C72 /* Assets.xcassets */; };
 		1B6F225B29EAE11400524C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F225929EAE11400524C72 /* LaunchScreen.storyboard */; };
 		1B6F226629EAE11400524C72 /* Scorp_Case_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F226529EAE11400524C72 /* Scorp_Case_StudyTests.swift */; };
 		1B6F227029EAE11400524C72 /* Scorp_Case_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F226F29EAE11400524C72 /* Scorp_Case_StudyUITests.swift */; };
 		1B6F227229EAE11400524C72 /* Scorp_Case_StudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F227129EAE11400524C72 /* Scorp_Case_StudyUITestsLaunchTests.swift */; };
+		1B6F228129EAE1B000524C72 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228029EAE1B000524C72 /* DataSource.swift */; };
+		1B6F228629EAE78000524C72 /* PeopleListerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228429EAE78000524C72 /* PeopleListerTableViewCell.swift */; };
+		1B6F228729EAE78000524C72 /* PeopleListerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F228529EAE78000524C72 /* PeopleListerTableViewCell.xib */; };
+		1B6F228A29EAEA7900524C72 /* PeopleListerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228929EAEA7900524C72 /* PeopleListerViewModel.swift */; };
+		1B6F228C29EAFC6800524C72 /* PeopleListerEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228B29EAFC6800524C72 /* PeopleListerEmptyView.swift */; };
+		1B6F228E29EB033100524C72 /* PeopleListerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228D29EB033100524C72 /* PeopleListerCellViewModel.swift */; };
+		1B6F229029EB053D00524C72 /* BaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F228F29EB053D00524C72 /* BaseCellViewModel.swift */; };
+		1B6F229229EB056F00524C72 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F229129EB056F00524C72 /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 		1B6F224B29EAE11300524C72 /* Scorp-Case-Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scorp-Case-Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6F224E29EAE11300524C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B6F225029EAE11300524C72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B6F225229EAE11300524C72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B6F225229EAE11300524C72 /* PeopleListerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListerViewController.swift; sourceTree = "<group>"; };
 		1B6F225529EAE11300524C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B6F225729EAE11400524C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B6F225A29EAE11400524C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		1B6F226B29EAE11400524C72 /* Scorp-Case-StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scorp-Case-StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6F226F29EAE11400524C72 /* Scorp_Case_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorp_Case_StudyUITests.swift; sourceTree = "<group>"; };
 		1B6F227129EAE11400524C72 /* Scorp_Case_StudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorp_Case_StudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B6F228029EAE1B000524C72 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		1B6F228429EAE78000524C72 /* PeopleListerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListerTableViewCell.swift; sourceTree = "<group>"; };
+		1B6F228529EAE78000524C72 /* PeopleListerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleListerTableViewCell.xib; sourceTree = "<group>"; };
+		1B6F228929EAEA7900524C72 /* PeopleListerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListerViewModel.swift; sourceTree = "<group>"; };
+		1B6F228B29EAFC6800524C72 /* PeopleListerEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListerEmptyView.swift; sourceTree = "<group>"; };
+		1B6F228D29EB033100524C72 /* PeopleListerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListerCellViewModel.swift; sourceTree = "<group>"; };
+		1B6F228F29EB053D00524C72 /* BaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellViewModel.swift; sourceTree = "<group>"; };
+		1B6F229129EB056F00524C72 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,10 @@
 		1B6F224D29EAE11300524C72 /* Scorp-Case-Study */ = {
 			isa = PBXGroup;
 			children = (
-				1B6F224E29EAE11300524C72 /* AppDelegate.swift */,
-				1B6F225029EAE11300524C72 /* SceneDelegate.swift */,
-				1B6F225229EAE11300524C72 /* ViewController.swift */,
-				1B6F225429EAE11300524C72 /* Main.storyboard */,
-				1B6F225729EAE11400524C72 /* Assets.xcassets */,
-				1B6F225929EAE11400524C72 /* LaunchScreen.storyboard */,
-				1B6F225C29EAE11400524C72 /* Info.plist */,
+				1B6F228229EAE75000524C72 /* Model */,
+				1B6F227F29EAE16F00524C72 /* View */,
+				1B6F228829EAEA6300524C72 /* View Model */,
+				1B6F227E29EAE15300524C72 /* Supporting Files */,
 			);
 			path = "Scorp-Case-Study";
 			sourceTree = "<group>";
@@ -125,6 +138,49 @@
 				1B6F227129EAE11400524C72 /* Scorp_Case_StudyUITestsLaunchTests.swift */,
 			);
 			path = "Scorp-Case-StudyUITests";
+			sourceTree = "<group>";
+		};
+		1B6F227E29EAE15300524C72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B6F224E29EAE11300524C72 /* AppDelegate.swift */,
+				1B6F225029EAE11300524C72 /* SceneDelegate.swift */,
+				1B6F225429EAE11300524C72 /* Main.storyboard */,
+				1B6F225729EAE11400524C72 /* Assets.xcassets */,
+				1B6F225929EAE11400524C72 /* LaunchScreen.storyboard */,
+				1B6F225C29EAE11400524C72 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B6F227F29EAE16F00524C72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B6F225229EAE11300524C72 /* PeopleListerViewController.swift */,
+				1B6F228429EAE78000524C72 /* PeopleListerTableViewCell.swift */,
+				1B6F228529EAE78000524C72 /* PeopleListerTableViewCell.xib */,
+				1B6F228B29EAFC6800524C72 /* PeopleListerEmptyView.swift */,
+				1B6F229129EB056F00524C72 /* BaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B6F228229EAE75000524C72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B6F228029EAE1B000524C72 /* DataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B6F228829EAEA6300524C72 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B6F228929EAEA7900524C72 /* PeopleListerViewModel.swift */,
+				1B6F228F29EB053D00524C72 /* BaseCellViewModel.swift */,
+				1B6F228D29EB033100524C72 /* PeopleListerCellViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B6F225B29EAE11400524C72 /* LaunchScreen.storyboard in Resources */,
+				1B6F228729EAE78000524C72 /* PeopleListerTableViewCell.xib in Resources */,
 				1B6F225829EAE11400524C72 /* Assets.xcassets in Resources */,
 				1B6F225629EAE11300524C72 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B6F225329EAE11300524C72 /* ViewController.swift in Sources */,
+				1B6F228A29EAEA7900524C72 /* PeopleListerViewModel.swift in Sources */,
+				1B6F229029EB053D00524C72 /* BaseCellViewModel.swift in Sources */,
+				1B6F225329EAE11300524C72 /* PeopleListerViewController.swift in Sources */,
 				1B6F224F29EAE11300524C72 /* AppDelegate.swift in Sources */,
+				1B6F228C29EAFC6800524C72 /* PeopleListerEmptyView.swift in Sources */,
+				1B6F228629EAE78000524C72 /* PeopleListerTableViewCell.swift in Sources */,
+				1B6F228129EAE1B000524C72 /* DataSource.swift in Sources */,
+				1B6F228E29EB033100524C72 /* PeopleListerCellViewModel.swift in Sources */,
+				1B6F229229EB056F00524C72 /* BaseTableViewCell.swift in Sources */,
 				1B6F225129EAE11300524C72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +503,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Scorp-Case-Study/Info.plist";
+				INFOPLIST_FILE = "Scorp-Case-Study/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scorp Case Study";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +533,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Scorp-Case-Study/Info.plist";
+				INFOPLIST_FILE = "Scorp-Case-Study/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scorp Case Study";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
